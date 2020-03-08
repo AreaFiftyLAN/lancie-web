@@ -1,21 +1,85 @@
 <html>
-  <head></head>
+  <head>
+    <style>
+      body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        background-color: #eeecec;
+        --primary-color: #1a2b43;
+        --secondary-color: #ffe574;
+        margin: 0;
+      }
+
+
+      p {
+        letter-spacing: 1px;
+        text-align: justify;
+      }
+
+      #top-menu-bar {
+        background-color: var(--primary-color);
+        overflow: auto;
+        height: 64px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      #top-menu-bar a {
+        color: var(--secondary-color);
+      }
+
+      #menu-logo {
+        color: var(--secondary-color);
+        margin: auto 10;
+      }
+
+      #menu-buttons {
+        color: var(--secondary-color);
+      }
+
+      section {
+        padding: 2em 0;
+      }
+
+      section > div {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      section:nth-child(2n) {
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+      }
+
+      section:nth-child(2n) p,
+      section:nth-child(2n) li {
+        color: #eeecec;
+      }
+
+      #hero h1 {
+        font-size: 68;
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
   <body>
-    <section>
+    <nav id="top-menu-bar">
       <!-- Menu bar -->
-      <div>
+      <div id="menu-logo">
         <!-- Logo -->
-        AREA FIFTYLAN
+        <h1>AREA FIFTYLAN</h1>
       </div>
-      <div>
+      <div id="menu-buttons">
         <!-- Menu -->
-        <a>Home</a>
-        <a>Tickets</a>
-        <a>My Area</a>
-        <a>Seatmap</a>
+        <a href="/">Home</a>
+        <a href="/tickets">Tickets</a>
+        <a href="/my-area">My Area</a>
+        <a href="/seatmap">Seatmap</a>
       </div>
-    </section>
-    <section>
+    </nav>
+    <section id="hero">
       <!-- Hero section -->
       <div>
         <h1>Area FiftyLAN</h1>
@@ -46,36 +110,44 @@
       </div>
     </section>
     <section>
-      <h1>Partners and Sponsors</h1>
-      <h2>Presented by</h2>
-      <h2>Premium sponsors</h2>
-      <h2>Supporting partners</h2>
+      <div>
+        <h1>Partners and Sponsors</h1>
+        <h2>Presented by</h2>
+        <h2>Premium sponsors</h2>
+        <h2>Supporting partners</h2>
+      </div>
     </section>
     <section>
-      <h1>Timetable</h1>
+      <div>
+        <h1>Timetable</h1>
+      </div>
     </section>
     <section>
-      <h1>Area FiftyLAN</h1>
-      <p>
-        Area FiftyLAN is the annual gaming event held at the TU Delft. In March,
-        more than 200 gamers will spend the weekend having a blast playing games
-        together. It is organized by the study association of Applied
-        Mathematics and Computer Science &amp; Engineering, W.I.S.V. ‘Christiaan
-        Huygens', in cooperation with X (former Unit Sports &amp; Culture, TU
-        Delft). All students are welcome to bring their PCs to play their
-        favourite games with their friends. There will be official tournaments
-        where you can win amazing prizes. Besides the official tournaments, you
-        can team up and have fun with more casual games as well or organize your
-        own tournament.
-      </p>
-      <p>
-        If you are no hardcore gamer, don’t worry. There are also enough
-        offline-games to play with. Think about arcade cabinets, retro consoles
-        and board games. More information about the event will be published at a
-        later date.
-      </p>
+      <div>
+        <h1>Area FiftyLAN</h1>
+        <p>
+          Area FiftyLAN is the annual gaming event held at the TU Delft. In
+          March, more than 200 gamers will spend the weekend having a blast
+          playing games together. It is organized by the study association of
+          Applied Mathematics and Computer Science &amp; Engineering, W.I.S.V.
+          ‘Christiaan Huygens', in cooperation with X (former Unit Sports &amp;
+          Culture, TU Delft). All students are welcome to bring their PCs to
+          play their favourite games with their friends. There will be official
+          tournaments where you can win amazing prizes. Besides the official
+          tournaments, you can team up and have fun with more casual games as
+          well or organize your own tournament.
+        </p>
+        <p>
+          If you are no hardcore gamer, don’t worry. There are also enough
+          offline-games to play with. Think about arcade cabinets, retro
+          consoles and board games. More information about the event will be
+          published at a later date.
+        </p>
+      </div>
     </section>
     <section>
+      <div>
+
       <h1>What do you get?</h1>
       <p>Buying a ticket will get you the following perks:</p>
       <ul>
@@ -95,17 +167,20 @@
         </li>
       </ul>
       <p>
-        You can purchase your early bird ticket for &euro;37,50* or a regular ticket
-        at a later date for &euro;40,-*. Both these tickets give access to everything
-        named above. For an additional &euro;5,00, we will pick up your PC and
-        deliver it to the event. The maximum distance for the pickup service is
-        7.5km from Sports and Culture Unit of the TU Delft. Your PC will be
-        returned to you on Sunday evening. Area FiftyLAN will be an
+        You can purchase your early bird ticket for &euro;37,50* or a regular
+        ticket at a later date for &euro;40,-*. Both these tickets give access
+        to everything named above. For an additional &euro;5,00, we will pick up
+        your PC and deliver it to the event. The maximum distance for the pickup
+        service is 7.5km from Sports and Culture Unit of the TU Delft. Your PC
+        will be returned to you on Sunday evening. Area FiftyLAN will be an
         unforgettable event you do not want to miss! Are you ready for the
         launch?<br /><sub>* CH members/alumni will get a small discount</sub>
       </p>
+      </div>
     </section>
     <section>
+      <div>
+      
       <h1>Official Tournaments</h1>
       <p>
         There are multiple official tournaments that will be organized by the
@@ -114,8 +189,11 @@
         not worry, you can organize your own! Contact us to get the ball
         rolling, more information on how to do that is found below.
       </p>
+      </div>
     </section>
     <section>
+      <div>
+
       <h1>Organize your own Tournament</h1>
       <p>
         Is your favorite game not listed as an official tournament? We offer the
@@ -161,8 +239,11 @@
         sign up. If you are interested in sponsoring one of the unofficial
         tournaments, you can find our contact information below.
       </p>
+      </div>
     </section>
     <section>
+      <div>
+
       <h1>Frequently Asked Questions</h1>
       <h2>
         When will the event take place?
@@ -275,9 +356,11 @@
         <li>Toiletries</li>
       </p>
 
-      If you live within a 7,5 km radius of the event and you bought the Pickup
-      Service option, we can come and pick up your hardware a day before the
-      event.
+      <p>
+        If you live within a 7,5 km radius of the event and you bought the
+        Pickup Service option, we can come and pick up your hardware a day
+        before the event.
+      </p>
       <h2>
         Can I come to the event as a spectator?
       </h2>
@@ -304,60 +387,67 @@
       <p>
         You can message us on Facebook, or send a mail to us.
       </p>
+      </div>
     </section>
     <section>
+      <div>
       <h1>6th LANcie of W.I.S.V. 'Christiaan Huygens'</h1>
       <p>
         The LANcie is the committee that organizes Area FiftyLAN each year. It's
-        our job to make sure everything goes to plan and that all
-        problems are taken care of. We don't bite, so don't hesitate to contact
-        us with a good story, some questions or just a casual conversation about
-        gaming. We're always open to feedback and fun ideas. We hope to see you
-        at the event! If you have any questions or are interested in sponsoring
-          the event, please send an email with our <a href="">contact form</a>.
+        our job to make sure everything goes to plan and that all problems are
+        taken care of. We don't bite, so don't hesitate to contact us with a
+        good story, some questions or just a casual conversation about gaming.
+        We're always open to feedback and fun ideas. We hope to see you at the
+        event! If you have any questions or are interested in sponsoring the
+        event, please send an email with our <a href="">contact form</a>.
       </p>
       <div>
-          <div>
-              <img src="" alt="chairman" />
-              <span>Member 1</span>
-              <span>Chairman</span>
-          </div>
-          <div>
-              <img src="" alt="secretary" />
-              <span>Member 2</span>
-              <span>Secretary</span>
-          </div>
-          <div>
-              <img src="" alt="treasurer" />
-              <span>Member 3</span>
-              <span>Treasurer</span>
-          </div>
-          <div>
-              <img src="" alt="promo" />
-              <span>Member 4</span>
-              <span>Commissioner of Promo</span>
-          </div>
-          <div>
-              <img src="" alt="logistics" />
-              <span>Member 5</span>
-              <span>Commissioner of Logistics</span>
-          </div>
-          <div>
-              <img src="" alt="quality" />
-              <span>Member 6</span>
-              <span>Qualitate Qua</span>
-          </div>
+        <div>
+          <img src="" alt="chairman" />
+          <span>Member 1</span>
+          <span>Chairman</span>
+        </div>
+        <div>
+          <img src="" alt="secretary" />
+          <span>Member 2</span>
+          <span>Secretary</span>
+        </div>
+        <div>
+          <img src="" alt="treasurer" />
+          <span>Member 3</span>
+          <span>Treasurer</span>
+        </div>
+        <div>
+          <img src="" alt="promo" />
+          <span>Member 4</span>
+          <span>Commissioner of Promo</span>
+        </div>
+        <div>
+          <img src="" alt="logistics" />
+          <span>Member 5</span>
+          <span>Commissioner of Logistics</span>
+        </div>
+        <div>
+          <img src="" alt="quality" />
+          <span>Member 6</span>
+          <span>Qualitate Qua</span>
+        </div>
       </div>
+      <div>
 
     </section>
     <section>
+      <div>
       <h1>Location</h1>
       <p>
-        This years edition will be held at X (former Unit Sports &amp; Culture on
-        the TU Delft campus). Address: Mekelweg 8, 2628 CD Delft
+        This years edition will be held at X (former Unit Sports &amp; Culture
+        on the TU Delft campus). Address: Mekelweg 8, 2628 CD Delft
       </p>
+      <div>
     </section>
     <section>
+      <div>
+
       <!-- Footer -->
       <p>
         W.I.S.V. ‘Christiaan Huygens’ (CH) is the study association for students
@@ -369,6 +459,7 @@
         Copyright &copy; 2015-2020 by W.I.S.V. ‘Christiaan Huygens’. All rights
         reserved.
       </p>
+      </div>
     </section>
   </body>
 </html>
